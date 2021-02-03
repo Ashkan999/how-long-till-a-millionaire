@@ -3,19 +3,19 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 20px;
   border-bottom: inset 1px;
 }
 
 .logo {
   -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .logo .icon {
@@ -30,8 +30,8 @@ header {
 
 .navbar {
   -webkit-box-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 
 .navbar ul {
@@ -63,6 +63,17 @@ header {
 
 .welcome-section p {
   font-size: 20px;
+  text-align: left;
+  margin-inline: 30%;
+  margin-block: 5%;
+}
+
+.info-section {
+  margin-block: 20%;
+}
+
+.info-section p {
+  font-size: 18px;
   text-align: left;
   margin-inline: 30%;
   margin-block: 5%;
