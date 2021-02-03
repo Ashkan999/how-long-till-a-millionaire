@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import InfoSection from "./components/InfoSection";
 import WelcomeSection from "./components/WelcomeSection";
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <WelcomeSection />
       <InfoSection />
+      <Footer />
     </div>
   );
 }
