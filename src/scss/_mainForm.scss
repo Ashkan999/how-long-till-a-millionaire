@@ -1,0 +1,17 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  margin-inline: 40%;
+
+  label {
+    font-size: 1.2em;
+    margin-bottom: 1%;
+  }
+
+  input {
+    font-size: 1.2em;
+    margin-bottom: 5%;
+  }
+}

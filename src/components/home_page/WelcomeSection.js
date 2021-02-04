@@ -1,7 +1,7 @@
 import React from "react";
-import MainButton from "./MainButton";
+import MainButton from "../MainButton";
 
-function WelcomeSection() {
+function WelcomeSection({ onStart }) {
   return (
     <div className="welcome-section">
       <h1>Welcome</h1>
@@ -11,7 +11,7 @@ function WelcomeSection() {
         repellat natus iure laboriosam ut maiores illo porro optio praesentium
         rem.{" "}
       </p>
-      <MainButton text="Let's Begin!" />
+      <MainButton text="Get Started" onClick={onStart} />
     </div>
   );
 }

@@ -1,8 +1,16 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 function InfoSection() {
   return (
-    <div className="info-section">
+    <div
+      className="info-section"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
       <h2>
         Just a bit more info about the calculations done behind the scenes
       </h2>
