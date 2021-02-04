@@ -46,15 +46,20 @@ header {
 
 .navbar a {
   text-decoration: none;
-  font-size: 1em;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
   -webkit-transition: border-bottom 0.5s;
   transition: border-bottom 0.5s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .navbar a:hover {
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
+  opacity: 0.9;
+}
+
+.welcome-section {
+  height: 400px;
 }
 
 .welcome-section h1 {
@@ -70,10 +75,11 @@ header {
 
 .info-section {
   margin-block: 20%;
+  height: 800px;
 }
 
 .info-section p {
-  font-size: 18px;
+  font-size: 1.2rem;
   text-align: left;
   margin-inline: 30%;
   margin-block: 5%;
@@ -87,7 +93,54 @@ header {
   font-size: 0.7em;
 }
 
+.main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  text-align: left;
+  margin-inline: 40%;
+}
+
+.main-form label {
+  font-size: 1.2em;
+  margin-bottom: 1%;
+}
+
+.main-form input {
+  font-size: 1.2em;
+  margin-bottom: 5%;
+}
+
+#user-input-page .back-button {
+  font-size: 1rem;
+}
+
+#user-input-page .back-button:active {
+  font-size: 2rem;
+}
+
 .App {
   text-align: center;
+}
+
+.welcome {
+  height: 600px;
+  -webkit-transition: height 1.5s;
+  transition: height 1.5s;
+}
+
+.welcome-form-showing {
+  height: 1000px;
+}
+
+.button {
+  cursor: pointer;
 }
 /*# sourceMappingURL=app.css.map */
