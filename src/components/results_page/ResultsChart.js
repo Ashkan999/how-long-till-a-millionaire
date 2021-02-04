@@ -1,7 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 
-const ResultsChart = () => {
+const ResultsChart = ({ userData }) => {
   return (
     <Line
       data={{

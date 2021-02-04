@@ -1,11 +1,14 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-function MainForm() {
+const MainForm = ({ onSubmitProp }) => {
   const { register, handleSubmit } = useForm();
+
+  let history = useHistory();
   const onSubmit = (data) => {
-    console.log(data);
+    onSubmitProp(data);
+    history.push("/results");
   };
 
   return (
@@ -37,11 +40,9 @@ function MainForm() {
         placeholder="200"
         ref={register}
       />
-      <Link to="/results">
-        <input className="button" type="submit" value="show my results" />
-      </Link>
+      <input className="button" type="submit" value="show my results" />
     </form>
   );
-}
+};
 
 export default MainForm;

@@ -17,6 +17,13 @@ function App() {
     animateScroll.scrollToTop({ smooth: "easeInOutQuad", duration: 1500 });
   };
 
+  const [userData, setUserData] = useState(null);
+  const processUserData = (data) => {
+    console.log(data);
+    //processes data in logic class
+    setUserData(data);
+  };
+
   return (
     <Router>
       <div className="App">
@@ -34,7 +41,10 @@ function App() {
                 <WelcomeSection onStart={showUserInputPage} />
                 <div id="user-input-page">
                   {isUserInputPageShowing && (
-                    <UserInputPage onClose={closeUserInputPage} />
+                    <UserInputPage
+                      onClose={closeUserInputPage}
+                      onSubmit={processUserData}
+                    />
                   )}
                 </div>
               </div>
@@ -43,7 +53,7 @@ function App() {
           )}
         />
         <Route path="/results">
-          <ResultsPage />
+          <ResultsPage userData={userData} />
         </Route>
         <Footer />
       </div>
