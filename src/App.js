@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { animateScroll } from "react-scroll";
 import Footer from "./components/home_page/Footer";
 import Header from "./components/home_page/Header";
 import InfoSection from "./components/home_page/InfoSection";
@@ -9,13 +10,24 @@ import "./css/App.css";
 function App() {
   const [isUserInputPageShowing, setUserInputPageShowing] = useState(false);
   const showUserInputPage = () => setUserInputPageShowing(true);
-  const closeUserInputPage = () => setUserInputPageShowing(false);
+  const closeUserInputPage = () => {
+    setUserInputPageShowing(false);
+    animateScroll.scrollToTop({ smooth: "easeInOutQuad", duration: 1500 });
+  };
 
   return (
     <div className="App">
       <Header />
-      <WelcomeSection onStart={showUserInputPage} />
-      {isUserInputPageShowing && <UserInputPage onClose={closeUserInputPage} />}
+      <div
+        className={isUserInputPageShowing ? "welcome-form-showing" : "welcome"}
+      >
+        <WelcomeSection onStart={showUserInputPage} />
+        <div id="user-input-page">
+          {isUserInputPageShowing && (
+            <UserInputPage onClose={closeUserInputPage} />
+          )}
+        </div>
+      </div>
       <InfoSection />
       <Footer />
     </div>

@@ -1,9 +1,9 @@
-import React from "react";
+import { Link } from "react-scroll";
 import MainButton from "../MainButton";
 
-function WelcomeSection({ onStart }) {
+const WelcomeSection = ({ onStart }) => {
   return (
-    <div className="welcome-section">
+    <div className="welcome-section" id="welcome-section">
       <h1>Welcome</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minima sint
@@ -11,9 +11,17 @@ function WelcomeSection({ onStart }) {
         repellat natus iure laboriosam ut maiores illo porro optio praesentium
         rem.{" "}
       </p>
-      <MainButton text="Get Started" onClick={onStart} />
+      <Link
+        activeClass="active"
+        to="user-input-page"
+        smooth={true}
+        duration={1500}
+        offset={-110}
+      >
+        <MainButton text="Get Started" onClick={onStart} />
+      </Link>
     </div>
   );
-}
+};
 
 export default WelcomeSection;

@@ -3,19 +3,19 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 20px;
   border-bottom: inset 1px;
 }
 
 .logo {
   -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -ms-flex: 2;
+  flex: 2;
 }
 
 .logo .icon {
@@ -30,8 +30,8 @@ header {
 
 .navbar {
   -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -ms-flex: 3;
+  flex: 3;
 }
 
 .navbar ul {
@@ -58,6 +58,10 @@ header {
   opacity: 0.9;
 }
 
+.welcome-section {
+  height: 400px;
+}
+
 .welcome-section h1 {
   margin-block: 5%;
 }
@@ -71,10 +75,11 @@ header {
 
 .info-section {
   margin-block: 20%;
+  height: 800px;
 }
 
 .info-section p {
-  font-size: 18px;
+  font-size: 1.2rem;
   text-align: left;
   margin-inline: 30%;
   margin-block: 5%;
@@ -94,11 +99,11 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   text-align: left;
   margin-inline: 40%;
 }
@@ -113,8 +118,26 @@ header {
   margin-bottom: 5%;
 }
 
+#user-input-page .back-button {
+  font-size: 1rem;
+}
+
+#user-input-page .back-button:active {
+  font-size: 2rem;
+}
+
 .App {
   text-align: center;
+}
+
+.welcome {
+  height: 600px;
+  -webkit-transition: height 1.5s;
+  transition: height 1.5s;
+}
+
+.welcome-form-showing {
+  height: 1000px;
 }
 
 .button {

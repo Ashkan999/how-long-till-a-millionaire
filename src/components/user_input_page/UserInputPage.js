@@ -1,15 +1,14 @@
-import React from "react";
-import MainForm from "./MainForm";
 import MainButton from "../MainButton";
+import MainForm from "./MainForm";
 
-function UserInputPage({ onClose }) {
+const UserInputPage = ({ onClose }) => {
   return (
-    <div className="user-input-page">
+    <>
       <p>We need the following information to start the calculations</p>
       <MainForm />
-      <MainButton text="back" onClick={onClose} />
-    </div>
+      <MainButton classNameProp="back-button" text="back" onClick={onClose} />
+    </>
   );
-}
+};
 
 export default UserInputPage;
