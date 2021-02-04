@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { animateScroll } from "react-scroll";
 import Footer from "./components/home_page/Footer";
 import Header from "./components/home_page/Header";
 import InfoSection from "./components/home_page/InfoSection";
 import WelcomeSection from "./components/home_page/WelcomeSection";
+import ResultsPage from "./components/results_page/ResultsPage";
 import UserInputPage from "./components/user_input_page/UserInputPage";
 import "./css/App.css";
 
@@ -16,21 +18,36 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Header />
-      <div
-        className={isUserInputPageShowing ? "welcome-form-showing" : "welcome"}
-      >
-        <WelcomeSection onStart={showUserInputPage} />
-        <div id="user-input-page">
-          {isUserInputPageShowing && (
-            <UserInputPage onClose={closeUserInputPage} />
+    <Router>
+      <div className="App">
+        <Header />
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <>
+              <div
+                className={
+                  isUserInputPageShowing ? "welcome-form-showing" : "welcome"
+                }
+              >
+                <WelcomeSection onStart={showUserInputPage} />
+                <div id="user-input-page">
+                  {isUserInputPageShowing && (
+                    <UserInputPage onClose={closeUserInputPage} />
+                  )}
+                </div>
+              </div>
+              <InfoSection />
+            </>
           )}
-        </div>
+        />
+        <Route path="/results">
+          <ResultsPage />
+        </Route>
+        <Footer />
       </div>
-      <InfoSection />
-      <Footer />
-    </div>
+    </Router>
   );
 }
 

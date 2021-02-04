@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 function MainForm() {
   const { register, handleSubmit } = useForm();
@@ -36,7 +37,9 @@ function MainForm() {
         placeholder="200"
         ref={register}
       />
-      <input className="button" type="submit" value="show my results" />
+      <Link to="/results">
+        <input className="button" type="submit" value="show my results" />
+      </Link>
     </form>
   );
 }
