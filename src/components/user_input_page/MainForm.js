@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
+import { animateScroll } from "react-scroll";
 
 const MainForm = ({ onSubmitProp }) => {
   const { register, handleSubmit } = useForm();
@@ -8,6 +9,7 @@ const MainForm = ({ onSubmitProp }) => {
   let history = useHistory();
   const onSubmit = (data) => {
     onSubmitProp(data);
+    animateScroll.scrollToTop({ smooth: "easeInOutQuad", duration: 1000 });
     history.push("/results");
   };
 

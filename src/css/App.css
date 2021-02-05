@@ -73,6 +73,16 @@ header {
   margin-block: 5%;
 }
 
+.welcome {
+  height: 70vh;
+  -webkit-transition: height 1.5s;
+  transition: height 1.5s;
+}
+
+.welcome-form-showing {
+  height: 120vh;
+}
+
 .info-section {
   margin-block: 20%;
   height: 800px;
@@ -132,16 +142,6 @@ header {
 
 .App {
   text-align: center;
-}
-
-.welcome {
-  height: 600px;
-  -webkit-transition: height 1.5s;
-  transition: height 1.5s;
-}
-
-.welcome-form-showing {
-  height: 1000px;
 }
 
 .button {

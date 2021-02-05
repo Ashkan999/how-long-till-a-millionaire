@@ -8,8 +8,11 @@ import WelcomeSection from "./components/home_page/WelcomeSection";
 import ResultsPage from "./components/results_page/ResultsPage";
 import UserInputPage from "./components/user_input_page/UserInputPage";
 import "./css/App.css";
+import InvestmentAnalyser from "./investment_analyser/InvestmentAnalyser";
 
 function App() {
+  const goalCapital = 1000;
+
   const [isUserInputPageShowing, setUserInputPageShowing] = useState(false);
   const showUserInputPage = () => setUserInputPageShowing(true);
   const closeUserInputPage = () => {
@@ -17,11 +20,11 @@ function App() {
     animateScroll.scrollToTop({ smooth: "easeInOutQuad", duration: 1500 });
   };
 
+  let investmentAnalyser = new InvestmentAnalyser(goalCapital);
   const [userData, setUserData] = useState(null);
   const processUserData = (data) => {
-    console.log(data);
-    //processes data in logic class
-    setUserData(data);
+    const processedData = investmentAnalyser.processUserData(data);
+    setUserData(processedData); //change to processed data
   };
 
   return (

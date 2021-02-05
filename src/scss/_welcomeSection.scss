@@ -12,3 +12,12 @@
     margin-block: 5%;
   }
 }
+
+.welcome {
+  height: 70vh;
+  transition: height 1.5s;
+}
+
+.welcome-form-showing {
+  height: 120vh;
+}
