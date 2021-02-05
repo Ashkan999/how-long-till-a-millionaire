@@ -58,6 +58,10 @@ header {
   opacity: 0.9;
 }
 
+.navbar .navlink-active {
+  border-bottom: 1px solid;
+}
+
 .welcome-section {
   height: 400px;
 }

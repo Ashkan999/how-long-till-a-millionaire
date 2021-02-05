@@ -1,5 +1,6 @@
 import React from "react";
 import { FaMoneyBillWave } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,13 +12,19 @@ function Header() {
       <nav className="navbar">
         <ul>
           <li>
-            <a href="/about">Home</a>
+            <NavLink exact to="/" activeClassName="navlink-active">
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="/about">About</a>
+            <NavLink to="/about" activeClassName="navlink-active">
+              About
+            </NavLink>
           </li>
           <li>
-            <a href="/about">Contact</a>
+            <NavLink to="/contact" activeClassName="navlink-active">
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>
