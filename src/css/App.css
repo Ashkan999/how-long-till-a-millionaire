@@ -16,6 +16,8 @@ header {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  text-decoration: none;
+  color: black;
 }
 
 .logo .icon {
@@ -56,6 +58,10 @@ header {
 .navbar a:hover {
   border-bottom: 1px solid;
   opacity: 0.9;
+}
+
+.navbar .navlink-active {
+  border-bottom: 1px solid;
 }
 
 .welcome-section {

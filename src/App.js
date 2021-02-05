@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { animateScroll } from "react-scroll";
+import AboutPage from "./components/about_page/AboutPage";
+import ContactPage from "./components/contact_page/ContactPage";
 import Footer from "./components/home_page/Footer";
 import Header from "./components/home_page/Header";
 import InfoSection from "./components/home_page/InfoSection";
@@ -28,9 +30,9 @@ function App() {
   };
 
   return (
-    <Router>
-      <div className="App">
-        <Header />
+    <div className="App">
+      <Header />
+      <Switch>
         <Route
           exact
           path="/"
@@ -58,9 +60,15 @@ function App() {
         <Route path="/results">
           <ResultsPage userData={userData} />
         </Route>
-        <Footer />
-      </div>
-    </Router>
+        <Route path="/about">
+          <AboutPage />
+        </Route>
+        <Route path="/contact">
+          <ContactPage />
+        </Route>
+      </Switch>
+      <Footer />
+    </div>
   );
 }
 

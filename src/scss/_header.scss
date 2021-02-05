@@ -8,6 +8,8 @@ header {
 
 .logo {
   flex: 2;
+  text-decoration: none;
+  color: black;
 
   .icon {
     float: left;
@@ -43,5 +45,9 @@ header {
   a:hover {
     border-bottom: 1px solid;
     opacity: 0.9;
+  }
+
+  .navlink-active {
+    border-bottom: 1px solid;
   }
 }
