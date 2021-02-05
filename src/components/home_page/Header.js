@@ -1,14 +1,16 @@
 import React from "react";
 import { FaMoneyBillWave } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
-      <div className="logo">
-        <FaMoneyBillWave className="icon" />
-        <h3>How Long Till I'm a Millionaire</h3>
-      </div>
+      <Link to="/">
+        <div className="logo">
+          <FaMoneyBillWave className="icon" />
+          <h3>How Long Till I'm a Millionaire</h3>
+        </div>
+      </Link>
       <nav className="navbar">
         <ul>
           <li>
