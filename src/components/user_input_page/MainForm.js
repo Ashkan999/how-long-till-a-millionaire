@@ -1,10 +1,16 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useHistory } from "react-router-dom";
+import { animateScroll } from "react-scroll";
 
-function MainForm() {
+const MainForm = ({ onSubmitProp }) => {
   const { register, handleSubmit } = useForm();
+
+  let history = useHistory();
   const onSubmit = (data) => {
-    console.log(data);
+    onSubmitProp(data);
+    animateScroll.scrollToTop({ smooth: "easeInOutQuad", duration: 1000 });
+    history.push("/results");
   };
 
   return (
@@ -39,6 +45,6 @@ function MainForm() {
       <input className="button" type="submit" value="show my results" />
     </form>
   );
-}
+};
 
 export default MainForm;
