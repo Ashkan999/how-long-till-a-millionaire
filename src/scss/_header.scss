@@ -1,7 +1,15 @@
+@import "./themeColors";
+
 header {
   height: 8vh;
   display: flex;
   border-bottom: inset 1px;
+  background: linear-gradient(
+    90deg,
+    $color-primary-0 0%,
+    $color-primary-4 100%
+  );
+  border-color: $color-primary-4;
 
   .logo {
     display: flex;
@@ -10,12 +18,16 @@ header {
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
   }
 
   .icon {
     font-size: 2.5em;
     margin: 4%;
+  }
+
+  p {
+    font-size: 1.1rem;
   }
 
   nav {
@@ -34,10 +46,10 @@ header {
 
     a {
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 1.2rem;
+      color: whitesmoke;
       border-bottom: 1px solid transparent;
-      transition: border-bottom 0.5s;
-      transition: opacity 0.3s;
+      transition: border-bottom 0.2s, opacity 0.2s;
     }
 
     a:hover {

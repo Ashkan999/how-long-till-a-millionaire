@@ -7,7 +7,7 @@ function Header() {
     <header>
       <Link to="/" className="logo">
         <FaMoneyBillWave className="icon" />
-        <h4>How Long Till I'm a Millionaire</h4>
+        <p>How Long Till I'm a Millionaire</p>
       </Link>
       <nav>
         <ul className="nav-links">
