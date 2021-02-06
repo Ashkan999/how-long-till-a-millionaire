@@ -5,14 +5,12 @@ import { NavLink, Link } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <Link to="/">
-        <div className="logo">
-          <FaMoneyBillWave className="icon" />
-          <h3>How Long Till I'm a Millionaire</h3>
-        </div>
+      <Link to="/" className="logo">
+        <FaMoneyBillWave className="icon" />
+        <h4>How Long Till I'm a Millionaire</h4>
       </Link>
-      <nav className="navbar">
-        <ul>
+      <nav>
+        <ul className="nav-links">
           <li>
             <NavLink exact to="/" activeClassName="navlink-active">
               Home

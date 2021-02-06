@@ -22,15 +22,7 @@ class InvestmentAnalyser {
       i++;
     }
 
-    let returnData = {
-      labels: processedData.map((x) => {
-        return processedData.indexOf(x);
-      }),
-      datasets: [{ data: processedData }],
-    };
-
-    console.log(returnData);
-    return returnData;
+    return processedData;
   }
 }
 

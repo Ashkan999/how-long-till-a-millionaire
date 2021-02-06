@@ -1,53 +1,55 @@
 header {
+  height: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 20px;
   border-bottom: inset 1px;
 }
 
-.logo {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   color: black;
 }
 
-.logo .icon {
-  float: left;
+header .icon {
   font-size: 2.5em;
-  margin-right: 15px;
+  margin: 4%;
 }
 
-.logo h3 {
-  float: left;
+header nav {
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
 }
 
-.navbar {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-}
-
-.navbar ul {
+header .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style: none;
-  padding: 1px;
+  width: 100%;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navbar li {
-  display: inline;
-  padding-right: 10%;
-}
-
-.navbar a {
+header .nav-links a {
   text-decoration: none;
+  font-size: 1rem;
   border-bottom: 1px solid transparent;
   -webkit-transition: border-bottom 0.5s;
   transition: border-bottom 0.5s;
@@ -55,12 +57,12 @@ header {
   transition: opacity 0.3s;
 }
 
-.navbar a:hover {
+header .nav-links a:hover {
   border-bottom: 1px solid;
   opacity: 0.9;
 }
 
-.navbar .navlink-active {
+header .nav-links .navlink-active {
   border-bottom: 1px solid;
 }
 
@@ -143,7 +145,16 @@ header {
 }
 
 .results-page {
-  height: 1000px;
+  margin: auto;
+  height: 120vh;
+  width: 70vw;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
