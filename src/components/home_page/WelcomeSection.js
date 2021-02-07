@@ -18,7 +18,11 @@ const WelcomeSection = ({ onStart }) => {
         duration={1500}
         offset={-110}
       >
-        <MainButton text="Get Started" onClick={onStart} />
+        <MainButton
+          classNameProp="start-button"
+          text="Get Started"
+          onClick={onStart}
+        />
       </Link>
     </div>
   );

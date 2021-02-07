@@ -40,7 +40,7 @@ function App() {
             <>
               <div
                 className={
-                  isUserInputPageShowing ? "welcome-form-showing" : "welcome"
+                  isUserInputPageShowing ? "home-form-showing" : "home"
                 }
               >
                 <WelcomeSection onStart={showUserInputPage} />

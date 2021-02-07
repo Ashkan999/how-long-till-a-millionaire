@@ -4,12 +4,12 @@ header {
   height: 8vh;
   display: flex;
   border-bottom: inset 1px;
-  background: linear-gradient(
-    90deg,
-    $color-primary-0 0%,
-    $color-primary-4 100%
-  );
   border-color: $color-primary-4;
+  background: linear-gradient(
+    180deg,
+    $color-primary-1 0%,
+    $color-primary-0 100%
+  );
 
   .logo {
     display: flex;
@@ -18,7 +18,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
-    color: whitesmoke;
+    color: $color-text-contrast;
   }
 
   .icon {
@@ -47,7 +47,7 @@ header {
     a {
       text-decoration: none;
       font-size: 1.2rem;
-      color: whitesmoke;
+      color: $color-text-contrast;
       border-bottom: 1px solid transparent;
       transition: border-bottom 0.2s, opacity 0.2s;
     }

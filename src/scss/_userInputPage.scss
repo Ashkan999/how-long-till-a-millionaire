@@ -1,4 +1,13 @@
 #user-input-page {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 50%;
+  // border: 2px red dashed;
+
   .back-button {
     font-size: 1rem;
   }

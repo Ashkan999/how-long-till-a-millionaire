@@ -5,6 +5,7 @@
 @import "./mainForm";
 @import "./userInputPage";
 @import "./resultsPage";
+@import "./themeColors";
 
 * {
   box-sizing: border-box;
@@ -14,8 +15,4 @@
 
 .App {
   text-align: center;
-}
-
-.button {
-  cursor: pointer;
 }
