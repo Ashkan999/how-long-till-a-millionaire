@@ -109,6 +109,8 @@ header .nav-links .navlink-active {
 }
 
 .welcome-section {
+  -webkit-animation: fade-in 1.5s ease-in-out;
+          animation: fade-in 1.5s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,6 +152,61 @@ header .nav-links .navlink-active {
           transform: translate(0px, -2px);
   -webkit-box-shadow: 0px 4px 10px black;
           box-shadow: 0px 4px 10px black;
+}
+
+.welcome-section .start-button-off {
+  -webkit-animation: fade-out 1.5s ease-in-out;
+          animation: fade-out 1.5s ease-in-out;
+  visibility: hidden;
+}
+
+.welcome-section .start-button-on {
+  -webkit-animation: fade-in 1.5s ease-in-out;
+          animation: fade-in 1.5s ease-in-out;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .info-section {
@@ -207,6 +264,8 @@ header .nav-links .navlink-active {
 }
 
 .welcome-section {
+  -webkit-animation: fade-in 1.5s ease-in-out;
+          animation: fade-in 1.5s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,6 +307,39 @@ header .nav-links .navlink-active {
           transform: translate(0px, -2px);
   -webkit-box-shadow: 0px 4px 10px black;
           box-shadow: 0px 4px 10px black;
+}
+
+.welcome-section .start-button-off {
+  -webkit-animation: fade-out 1.5s ease-in-out;
+          animation: fade-out 1.5s ease-in-out;
+  visibility: hidden;
+}
+
+.welcome-section .start-button-on {
+  -webkit-animation: fade-in 1.5s ease-in-out;
+          animation: fade-in 1.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .main-form {

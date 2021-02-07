@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import MainButton from "../MainButton";
 
-const WelcomeSection = ({ onStart }) => {
+const WelcomeSection = ({ isUserInputPageShowing, onStart }) => {
   return (
     <div className="welcome-section" id="welcome-section">
       <h1>Welcome</h1>
@@ -12,6 +12,9 @@ const WelcomeSection = ({ onStart }) => {
         rem.{" "}
       </p>
       <Link
+        className={
+          isUserInputPageShowing ? "start-button-off" : "start-button-on"
+        }
         activeClass="active"
         to="user-input-page"
         smooth={true}

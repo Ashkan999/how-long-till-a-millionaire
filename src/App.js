@@ -43,7 +43,10 @@ function App() {
                   isUserInputPageShowing ? "home-form-showing" : "home"
                 }
               >
-                <WelcomeSection onStart={showUserInputPage} />
+                <WelcomeSection
+                  isUserInputPageShowing={isUserInputPageShowing}
+                  onStart={showUserInputPage}
+                />
                 <div id="user-input-page">
                   {isUserInputPageShowing && (
                     <UserInputPage
