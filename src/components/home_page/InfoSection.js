@@ -3,13 +3,18 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-function InfoSection() {
+function InfoSection({ isUserInputPageShowing }) {
   return (
     <div
-      className="info-section"
+      // data-aos-once="true"
       data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-once="true"
+      data-aos-duration="1500"
+      // data-aos-offset={isUserInputPageShowing ? "1200" : "120"}
+      className={
+        isUserInputPageShowing
+          ? "info-section-form-open"
+          : "info-section-form-closed"
+      }
     >
       <h2>
         Just a bit more info about the calculations done behind the scenes

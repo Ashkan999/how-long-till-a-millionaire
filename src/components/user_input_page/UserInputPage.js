@@ -6,7 +6,7 @@ const UserInputPage = ({ onClose, onSubmit }) => {
     <>
       <p>We need the following information to start the calculations</p>
       <MainForm onSubmitProp={onSubmit} />
-      <MainButton classNameProp="back-button" text="back" onClick={onClose} />
+      <MainButton classNameProp="back-button" text="Back" onClick={onClose} />
     </>
   );
 };

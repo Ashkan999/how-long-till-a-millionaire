@@ -1,5 +1,11 @@
 .results-page {
-  margin: auto;
-  height: 120vh;
-  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  // margin: auto;
+  width: 70%;
+  height: 110vh;
+  // width: 70vw;
+  // height: 120vh;
 }

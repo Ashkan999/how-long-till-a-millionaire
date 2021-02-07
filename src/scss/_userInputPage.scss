@@ -1,18 +1,40 @@
+@import "./themeColors";
+
 #user-input-page {
   font-size: 1.3rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 40%;
   height: 50%;
   // border: 2px red dashed;
 
+  $back-button-width: 100px;
+  $back-button-height: 40px;
+
   .back-button {
-    font-size: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: $color-text-contrast;
+    background-color: $color-secondary-2-0;
+    width: $back-button-width;
+    height: $back-button-height;
+    border-radius: 6px;
+    border-width: 0px;
+    outline-width: 0;
+    box-shadow: 0px 1px 4px black;
+    transition: background-color 0.2s ease-out, box-shadow 0.2s, transform 0.2s;
+  }
+
+  .back-button:hover {
+    background-color: $color-secondary-2-1;
+    transform: translate(0px, -2px);
+    box-shadow: 0px 4px 10px black;
   }
 
   .back-button:active {
-    font-size: 2rem;
+    transition: none;
+    transform: translate(0px, 2px);
   }
 }

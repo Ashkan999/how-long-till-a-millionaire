@@ -56,7 +56,7 @@ function App() {
                   )}
                 </div>
               </div>
-              <InfoSection />
+              <InfoSection isUserInputPageShowing={isUserInputPageShowing} />
             </>
           )}
         />
