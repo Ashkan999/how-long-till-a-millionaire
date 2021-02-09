@@ -1,6 +1,7 @@
 import React from "react";
+import { CgMenu } from "react-icons/cg";
 import { FaMoneyBillWave } from "react-icons/fa";
-import { NavLink, Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -28,6 +29,7 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <CgMenu className="mobile-menu" />
     </header>
   );
 }

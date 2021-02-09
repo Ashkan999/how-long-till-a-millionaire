@@ -25,16 +25,16 @@
     outline-width: 0;
     box-shadow: 0px 1px 4px black;
     transition: background-color 0.2s ease-out, box-shadow 0.2s, transform 0.2s;
-  }
 
-  .back-button:hover {
-    background-color: $color-secondary-2-1;
-    transform: translate(0px, -2px);
-    box-shadow: 0px 4px 10px black;
-  }
+    &:hover {
+      background-color: $color-secondary-2-1;
+      transform: translate(0px, -2px);
+      box-shadow: 0px 4px 10px black;
+    }
 
-  .back-button:active {
-    transition: none;
-    transform: translate(0px, 2px);
+    &:active {
+      transition: none;
+      transform: translate(0px, 2px);
+    }
   }
 }

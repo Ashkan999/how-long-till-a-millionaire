@@ -49,17 +49,34 @@ header {
       text-decoration: none;
       font-size: 1.2rem;
       color: $color-text-contrast;
-      border-bottom: 1px solid transparent;
+      padding-bottom: 2.5vh;
+      border-bottom: 4px solid transparent;
       transition: border-bottom 0.2s, opacity 0.2s;
-    }
 
-    a:hover {
-      border-bottom: 1px solid;
-      opacity: 0.9;
+      &:hover {
+        border-bottom: 4px solid $color-secondary-2-0;
+        opacity: 0.9;
+      }
     }
 
     .navlink-active {
-      border-bottom: 1px solid;
+      border-bottom: 4px solid $color-secondary-2-0;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2.3rem;
+    color: $color-text-contrast;
+    margin: auto;
+
+    @media screen and (max-width: 768px) {
+      display: block;
     }
   }
 }
