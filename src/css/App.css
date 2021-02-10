@@ -336,21 +336,154 @@ header .mobile-menu-icon {
 }
 
 .info-section-form-closed {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+      grid-template-areas: "header header" "subheader subheader" "explaination1 formula1" "explaination2 formula2";
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  width: 50%;
   height: 110vh;
   margin-top: 0%;
 }
 
-.info-section-form-closed p {
-  font-size: 1.2rem;
+.info-section-form-closed h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+.info-section-form-closed .subheader {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: subheader;
+}
+
+.info-section-form-closed .explaination1 {
+  font-size: 1rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: explaination1;
+}
+
+.info-section-form-closed .explaination2 {
+  font-size: 1rem;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: explaination2;
+}
+
+.info-section-form-closed .formula1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: formula1;
+}
+
+.info-section-form-closed .formula2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: formula2;
 }
 
 .info-section-form-open {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+      grid-template-areas: "header header" "subheader subheader" "explaination1 formula1" "explaination2 formula2";
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  width: 50%;
   height: 110vh;
   margin-top: 30%;
 }
 
-.info-section-form-open p {
-  font-size: 1.2rem;
+.info-section-form-open h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+.info-section-form-open .subheader {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: subheader;
+}
+
+.info-section-form-open .explaination1 {
+  font-size: 1rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: explaination1;
+}
+
+.info-section-form-open .explaination2 {
+  font-size: 1rem;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: explaination2;
+}
+
+.info-section-form-open .formula1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: formula1;
+}
+
+.info-section-form-open .formula2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: formula2;
+}
+
+@media screen and (max-width: 1200px) {
+  .info-section-form-closed,
+  .info-section-form-open {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info-section-form-closed,
+  .info-section-form-open {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "header" "subheader" "explaination1" "formula1" "explaination2" "formula2";
+  }
+}
+
+@media screen and (max-height: 640px) {
+  .info-section-form-closed,
+  .info-section-form-open {
+    height: 180vh;
+  }
 }
 
 .footer {
