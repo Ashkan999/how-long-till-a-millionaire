@@ -33,8 +33,16 @@
 
   // border: 2px black dashed;
 
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
   p {
-    font-size: 1.3em;
+    font-size: 1.3rem;
+
+    @media screen and (max-width: 400px) {
+      font-size: 1rem;
+    }
   }
 
   $start-button-width: 200px;

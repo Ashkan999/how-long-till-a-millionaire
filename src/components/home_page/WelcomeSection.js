@@ -4,12 +4,10 @@ import MainButton from "../MainButton";
 const WelcomeSection = ({ isUserInputPageShowing, onStart }) => {
   return (
     <div className="welcome-section" id="welcome-section">
-      <h1>Welcome</h1>
+      <h1>How long till you're a millionaire?</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minima sint
-        tempore voluptatum ex distinctio reiciendis, quia rerum, explicabo
-        repellat natus iure laboriosam ut maiores illo porro optio praesentium
-        rem.{" "}
+        Find out now using this fast and simple compound interest calculater
+        that supports monthly deposits!{" "}
       </p>
       <Link
         className={

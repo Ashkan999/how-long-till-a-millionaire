@@ -14,7 +14,7 @@ header {
 
   .logo {
     display: flex;
-    width: 30%;
+    width: 40%;
     height: 100%;
     justify-content: flex-start;
     align-items: center;
@@ -23,12 +23,12 @@ header {
   }
 
   .icon {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin: 4%;
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .nav-container {
@@ -36,6 +36,7 @@ header {
     width: 50%;
     height: 100%;
     margin-left: auto;
+
     .nav-links {
       display: flex;
       list-style: none;
@@ -61,10 +62,6 @@ header {
 
       .navlink-active {
         border-bottom: 4px solid $color-secondary-2-0;
-      }
-
-      @media screen and (max-width: 768px) {
-        display: none;
       }
     }
   }
@@ -131,12 +128,23 @@ header {
 
   .mobile-menu-icon {
     display: none;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     color: $color-text-contrast;
     margin: auto;
+    margin-right: 5px;
     cursor: pointer;
+  }
 
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+    .logo {
+      width: 60%;
+    }
+
+    .nav-container .nav-links {
+      display: none;
+    }
+
+    .mobile-menu-icon {
       display: block;
     }
   }

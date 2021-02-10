@@ -4,7 +4,7 @@ import MainForm from "./MainForm";
 const UserInputPage = ({ onClose, onSubmit }) => {
   return (
     <>
-      <p>We need the following information to start the calculations</p>
+      <p>Please provide the following information:</p>
       <MainForm onSubmitProp={onSubmit} />
       <MainButton classNameProp="back-button" text="Back" onClick={onClose} />
     </>
