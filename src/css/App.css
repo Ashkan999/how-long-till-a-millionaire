@@ -488,6 +488,8 @@ header .mobile-menu-icon {
 
 .footer {
   border-top: lightslategrey solid 1px;
+  width: 100%;
+  height: 20px;
 }
 
 .footer p {
@@ -835,13 +837,29 @@ header .mobile-menu-icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-inline: auto;
   width: 70%;
-  height: 110vh;
+}
+
+.results-page h3 {
+  margin-block: 6%;
+}
+
+.results-page p {
+  margin-block: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .results-page {
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 * {

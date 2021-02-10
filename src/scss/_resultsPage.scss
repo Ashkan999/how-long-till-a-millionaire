@@ -1,11 +1,25 @@
 .results-page {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  // margin: auto;
+  margin-inline: auto;
   width: 70%;
-  height: 110vh;
-  // width: 70vw;
-  // height: 120vh;
+  // height: 110vh;
+
+  // background-color: aqua;
+
+  h3 {
+    // margin-bottom: 40px;
+    margin-block: 6%;
+  }
+
+  p {
+    margin-block: 10%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 100vh;
+  }
 }

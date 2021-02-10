@@ -22,7 +22,7 @@ function InfoSection({ isUserInputPageShowing }) {
         Just a bit more info about the calculations done behind the scenes
       </h2>
       <p className="subheader">
-        The following formula is used to calculate the remaining years:
+        The following formulae are used to calculate the remaining years:
       </p>
       <p className="explaination1">
         The formula is the addition of the future value of the deposits and the
