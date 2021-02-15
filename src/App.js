@@ -16,7 +16,10 @@ function App() {
   const goalCapital = 1000;
 
   const [isUserInputPageShowing, setUserInputPageShowing] = useState(false);
-  const showUserInputPage = () => setUserInputPageShowing(true);
+  const showUserInputPage = () => {
+    setUserInputPageShowing(true);
+    // scroller.scrollTo("test", { smooth: true });
+  };
   const closeUserInputPage = () => {
     setUserInputPageShowing(false);
     animateScroll.scrollToTop({ smooth: "easeInOutQuad", duration: 1500 });
@@ -26,7 +29,7 @@ function App() {
   const [userData, setUserData] = useState(null);
   const processUserData = (data) => {
     const processedData = investmentAnalyser.processUserData(data);
-    setUserData(processedData); //change to processed data
+    setUserData(processedData);
   };
 
   return (
@@ -47,14 +50,11 @@ function App() {
                   isUserInputPageShowing={isUserInputPageShowing}
                   onStart={showUserInputPage}
                 />
-                <div id="user-input-page">
-                  {isUserInputPageShowing && (
-                    <UserInputPage
-                      onClose={closeUserInputPage}
-                      onSubmit={processUserData}
-                    />
-                  )}
-                </div>
+                <UserInputPage
+                  onClose={closeUserInputPage}
+                  onSubmit={processUserData}
+                  isUserInputPageShowing={isUserInputPageShowing}
+                />
               </div>
               <InfoSection isUserInputPageShowing={isUserInputPageShowing} />
             </>

@@ -1,10 +1,19 @@
 import { useEffect } from "react";
-import { animateScroll } from "react-scroll";
+import { animateScroll, scroller } from "react-scroll";
 
-const ScrollToTopOnMount = ({ duration }) => {
+const ScrollToTopOnMount = ({ to, duration }) => {
   useEffect(() => {
-    animateScroll.scrollToTop({ smooth: "easeInOutQuad", duration: duration });
+    to === undefined
+      ? animateScroll.scrollToTop({
+          smooth: "easeInOutQuad",
+          duration: duration,
+        })
+      : scroller.scrollTo(to, { smooth: true, duration: duration });
   });
+
+  ScrollToTopOnMount.defaultProps = {
+    duration: 1000,
+  };
 
   return null;
 };

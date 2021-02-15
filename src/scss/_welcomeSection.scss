@@ -7,7 +7,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 110vh;
   transition: height 1.5s;
@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   width: 40%;
   height: 50%;
 
@@ -48,14 +49,14 @@
   $start-button-width: 200px;
   $start-button-height: 50px;
 
-  .start-button {
-    cursor: pointer;
-    font-size: 1.3rem;
+  %start-button {
     color: $color-text-contrast;
     background-color: $color-primary-0;
     width: $start-button-width;
     height: $start-button-height;
-    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 10px;
     border-width: 0px;
     outline-width: 0;
     box-shadow: 0px 1px 4px black;
@@ -73,13 +74,15 @@
     }
   }
 
-  .start-button-off {
-    animation: fade-out 1.5s ease;
-    visibility: hidden;
+  .start-button-showing {
+    @extend %start-button;
+    animation: fade-in 1.3s ease-in-out;
   }
 
-  .start-button-on {
-    animation: fade-in 1.5s ease-in-out;
+  .start-button-hidden {
+    @extend %start-button;
+    animation: fade-out 1.5s ease;
+    visibility: hidden;
   }
 }
 

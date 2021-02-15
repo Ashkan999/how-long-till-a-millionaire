@@ -14,13 +14,13 @@ const ResultsPage = ({ userData }) => {
     } else if (years <= 25) {
       return "There is light at the end of the tunnel, but the tunnel is a long one unfortunately. Don't give up and keep up the good work, you'll get there!";
     } else if (years <= 35) {
-      return "You still have quite some way to go to get to that million. Try to speed up the journey by reading up on investing and personal finance, good luck!";
+      return "You still have quite some way to go to get to that million. Try to speed up the journey by reading up on investing and personal finance. Good luck!";
     }
   };
 
   return (
-    <div className="results-page">
-      <ScrollToTopOnMount duration={1000} />
+    <div id="results-page">
+      <ScrollToTopOnMount to="results-page" duration={1000} />
       <h3>Your Results</h3>
       <ResultsChart userData={userData} />
       <p>{displayResultText(userData.length)}</p>
