@@ -9,7 +9,7 @@ const UserInputPage = ({ onClose, onSubmit, isUserInputPageShowing }) => {
 
   return (
     <div id="user-input-page">
-      <ScrollToTopOnMount to="user-input-page" />
+      <ScrollToTopOnMount to="user-input-page" duration={1500} offset={-70} />
       <p>Please provide the following information:</p>
       <MainForm onSubmitProp={onSubmit} />
       <MainButton classNameProp="back-button" text="Back" onClick={onClose} />

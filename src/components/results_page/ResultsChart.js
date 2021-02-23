@@ -8,13 +8,13 @@ const ResultsChart = ({ userData }) => {
       {
         label: "Liquid Net Worth",
         data: userData,
-        backgroundColor: "rgba(42, 176, 109, 0.5)",
+        backgroundColor: "rgba(16, 123, 139, 0.6)",
       },
       {
         type: "bar",
         label: "Liquid Net Worth",
         data: userData,
-        backgroundColor: "rgba(42, 176, 109, 0.8)",
+        backgroundColor: "rgba(16, 123, 139, 0.8)",
       },
     ],
   };
@@ -23,7 +23,9 @@ const ResultsChart = ({ userData }) => {
     <Line
       data={chartData}
       options={{
-        animation: { duration: 2000, easing: "easeOutQuad" },
+        // title: { display: true, text: "Your Results", fontSize: 16 },
+        animation: { duration: 3000, easing: "easeOutQuad" },
+        legend: { display: false },
       }}
     />
   );

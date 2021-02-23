@@ -1,21 +1,26 @@
-.info-section-form-closed {
+.info-section {
+  height: 40%;
+  // min-height: 400px;
+  max-width: 768px;
   display: grid;
   grid-template-columns: 60% 40%;
+  column-gap: 30px;
+  row-gap: 3em;
   grid-template-areas:
     "header header"
     "subheader subheader"
     "explaination1 formula1"
     "explaination2 formula2";
-  column-gap: 30px;
-  row-gap: 10%;
   justify-content: center;
   justify-items: center;
   align-items: center;
   align-content: center;
   margin: auto;
-  width: 50%;
-  height: 110vh;
-  margin-top: 0%;
+  padding: 1em 1em;
+
+  // width: 100%;
+  // height: 110vh;
+  // margin-top: 0%;
   // transition: margin-top 1.5s 1s;
 
   // background-color: brown;
@@ -45,81 +50,95 @@
   .formula2 {
     grid-area: formula2;
   }
-}
 
-.info-section-form-open {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-areas:
-    "header header"
-    "subheader subheader"
-    "explaination1 formula1"
-    "explaination2 formula2";
-  column-gap: 30px;
-  row-gap: 10%;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  margin: auto;
-  width: 50%;
-  height: 110vh;
-  margin-top: 30%;
-  // transition: margin-top 1.5s 1s;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
 
-  // background-color: brown;
-
-  h2 {
-    grid-area: header;
-  }
-
-  .subheader {
-    grid-area: subheader;
-  }
-
-  .explaination1 {
-    font-size: 1rem;
-    grid-area: explaination1;
-  }
-
-  .explaination2 {
-    font-size: 1rem;
-    grid-area: explaination2;
-  }
-
-  .formula1 {
-    grid-area: formula1;
-  }
-
-  .formula2 {
-    grid-area: formula2;
+    .formula1 {
+      width: 60%;
+      max-width: 200px;
+    }
+    .formula2 {
+      width: 80%;
+      max-width: 260px;
+    }
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .info-section-form-closed,
-  .info-section-form-open {
-    width: 90%;
-  }
-}
+// .info-section-form-open {
+//   display: grid;
+//   grid-template-columns: 60% 40%;
+//   grid-template-areas:
+//     "header header"
+//     "subheader subheader"
+//     "explaination1 formula1"
+//     "explaination2 formula2";
+//   column-gap: 30px;
+//   row-gap: 10%;
+//   justify-content: center;
+//   justify-items: center;
+//   align-items: center;
+//   align-content: center;
+//   margin: auto;
+//   width: 50%;
+//   height: 110vh;
+//   margin-top: 30%;
+//   // transition: margin-top 1.5s 1s;
 
-@media screen and (max-width: 600px) {
-  .info-section-form-closed,
-  .info-section-form-open {
-    grid-template-columns: 100%;
-    grid-template-areas:
-      "header"
-      "subheader"
-      "explaination1"
-      "formula1"
-      "explaination2"
-      "formula2";
-  }
-}
+//   // background-color: brown;
 
-@media screen and (max-height: 640px) {
-  .info-section-form-closed,
-  .info-section-form-open {
-    height: 180vh;
-  }
-}
+//   h2 {
+//     grid-area: header;
+//   }
+
+//   .subheader {
+//     grid-area: subheader;
+//   }
+
+//   .explaination1 {
+//     font-size: 1rem;
+//     grid-area: explaination1;
+//   }
+
+//   .explaination2 {
+//     font-size: 1rem;
+//     grid-area: explaination2;
+//   }
+
+//   .formula1 {
+//     grid-area: formula1;
+//   }
+
+//   .formula2 {
+//     grid-area: formula2;
+//   }
+// }
+
+// @media screen and (max-width: 1200px) {
+//   .info-section-form-closed,
+//   .info-section-form-open {
+//     width: 90%;
+//   }
+// }
+
+// @media screen and (max-width: 600px) {
+//   .info-section-form-closed,
+//   .info-section-form-open {
+//     grid-template-columns: 100%;
+//     grid-template-areas:
+//       "header"
+//       "subheader"
+//       "explaination1"
+//       "formula1"
+//       "explaination2"
+//       "formula2";
+//   }
+// }
+
+// @media screen and (max-height: 640px) {
+//   .info-section-form-closed,
+//   .info-section-form-open {
+//     height: 180vh;
+//   }
+// }

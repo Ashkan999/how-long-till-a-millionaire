@@ -1,0 +1,14 @@
+@import "./welcomeSection";
+@import "./userInputPage";
+@import "./mainForm";
+@import "./infoSection";
+
+.home-page {
+  height: 130vh;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  //   background-color: cadetblue;
+}

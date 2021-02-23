@@ -3,14 +3,14 @@ import { CgMenu, CgClose } from "react-icons/cg";
 import { FaMoneyBillWave } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 
-function Header() {
+function Header({ isHeaderExtended }) {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const openMobileMenu = () => setMobileMenuOpen(true);
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <header>
+    <header className={isHeaderExtended ? "header header-extended" : "header"}>
       <Link to="/" className="logo">
         <FaMoneyBillWave className="icon" />
         <p>How Long Till I'm a Millionaire</p>
