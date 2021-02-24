@@ -4,7 +4,6 @@ import { FaGithub } from "react-icons/fa";
 const AboutPage = () => {
   return (
     <>
-      {/* <div className="bg1"></div> */}
       <div className="about-page">
         <h1>About</h1>
         <div className="about-container">

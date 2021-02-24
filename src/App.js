@@ -1,37 +1,25 @@
 import { useEffect, useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import { animateScroll } from "react-scroll";
 import AboutPage from "./components/about_page/AboutPage";
 import ContactPage from "./components/contact_page/ContactPage";
 import Footer from "./components/home_page/Footer";
 import Header from "./components/home_page/Header";
-import InfoSection from "./components/home_page/InfoSection";
-import WelcomeSection from "./components/home_page/WelcomeSection";
+import HomePage from "./components/home_page/HomePage";
 import ResultsPage from "./components/results_page/ResultsPage";
-import UserInputPage from "./components/user_input_page/UserInputPage";
 import "./css/App.css";
 import InvestmentAnalyser from "./investment_analyser/InvestmentAnalyser";
-import { useLocation } from "react-router-dom";
 
 function App() {
   const goalCapital = 1000;
-
-  const [isUserInputPageShowing, setUserInputPageShowing] = useState(false);
-  const showUserInputPage = () => {
-    setUserInputPageShowing(true);
-    // scroller.scrollTo("test", { smooth: true });
-  };
-  const closeUserInputPage = () => {
-    setUserInputPageShowing(false);
-    animateScroll.scrollToTop({ smooth: "easeInOutQuad", duration: 1500 });
-  };
 
   let investmentAnalyser = new InvestmentAnalyser(goalCapital);
   const [userData, setUserData] = useState(null); //make empty array ipv null
   const processUserData = (data) => {
     const processedData = investmentAnalyser.processUserData(data);
     setUserData(processedData);
-    setUserInputPageShowing(false);
+
+    // setUserInputPageShowing(false);
     // animateScroll.scrollToTop({ smooth: "easeInOutQuad", duration: 1500 });
     // closeUserInputPage();
   };
@@ -47,30 +35,9 @@ function App() {
     <div className="App">
       <Header isHeaderExtended={isHeaderExtended} />
       <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <div className="home-page">
-              <div
-                className={
-                  isUserInputPageShowing ? "home-form-showing" : "home"
-                }
-              >
-                <WelcomeSection
-                  isUserInputPageShowing={isUserInputPageShowing}
-                  onStart={showUserInputPage}
-                />
-                <UserInputPage
-                  onClose={closeUserInputPage}
-                  onSubmit={processUserData}
-                  isUserInputPageShowing={isUserInputPageShowing}
-                />
-              </div>
-              <InfoSection isUserInputPageShowing={isUserInputPageShowing} />
-            </div>
-          )}
-        />
+        <Route exact path="/">
+          <HomePage onSubmit={processUserData} />
+        </Route>
         <Route path="/results">
           <ResultsPage userData={userData} />
         </Route>
