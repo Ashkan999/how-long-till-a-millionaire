@@ -1,6 +1,7 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
-import { animateScroll } from "react-scroll";
 import AboutPage from "./components/about_page/AboutPage";
 import ContactPage from "./components/contact_page/ContactPage";
 import Footer from "./components/home_page/Footer";
@@ -9,6 +10,7 @@ import HomePage from "./components/home_page/HomePage";
 import ResultsPage from "./components/results_page/ResultsPage";
 import "./css/App.css";
 import InvestmentAnalyser from "./investment_analyser/InvestmentAnalyser";
+AOS.init();
 
 function App() {
   const goalCapital = 1000;

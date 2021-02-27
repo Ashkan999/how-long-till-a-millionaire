@@ -1,10 +1,12 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import ScrollToTopOnMount from "../ScrollToTopOnMount";
 
 const AboutPage = () => {
   return (
     <>
       <div className="about-page">
+        <ScrollToTopOnMount duration={1500} />
         <h1>About</h1>
         <div className="about-container">
           <p>

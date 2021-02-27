@@ -1,37 +1,15 @@
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 60%;
-  transition: height 1.5s;
-  // background-color: yellow;
-}
-
-.home-form-showing {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  // height: 110vh;
-  height: 60%;
-  transition: height 1.5s;
-  // background-color: yellow;
-
-  // background-color: yellow;
-}
-
 .welcome-section {
-  animation: fade-in 1.5s ease-in-out;
+  max-width: 768px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 40%;
-  height: 50%;
+  animation: fade-in 1.5s ease-in-out;
+  // background-color: aqua;
 
-  @media screen and (max-width: 768px) {
-    width: 90%;
+  h1 {
+    color: $color-secondary-2-0;
   }
 
   p {
@@ -53,6 +31,10 @@
       animation: fade-out 1.5s ease;
       visibility: hidden;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
   }
 }
 

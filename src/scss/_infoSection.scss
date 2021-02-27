@@ -1,7 +1,6 @@
 .info-section {
-  height: 40%;
-  // min-height: 400px;
   max-width: 768px;
+  min-height: 800px;
   display: grid;
   grid-template-columns: 60% 40%;
   column-gap: 30px;
@@ -26,6 +25,7 @@
   // background-color: brown;
 
   h2 {
+    color: $color-secondary-2-0;
     grid-area: header;
   }
 

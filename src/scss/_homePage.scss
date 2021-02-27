@@ -1,14 +1,29 @@
 @import "./welcomeSection";
 @import "./userInputPage";
 @import "./mainForm";
+@import "./exampleSection";
 @import "./infoSection";
 
 .home-page {
-  height: 130vh;
-  min-height: 1000px;
+  // height: 200vh;
+  // min-height: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   //   background-color: cadetblue;
+}
+
+.welcome-and-form-container {
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: height 1.5s;
+  // background-color: yellow;
+
+  // &--open {
+  //   height: 110vh;
+  // }
 }

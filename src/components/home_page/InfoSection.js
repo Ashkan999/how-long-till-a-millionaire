@@ -1,9 +1,6 @@
 import React from "react";
-import AOS from "aos";
 import formula1 from "../../assets/formula_1.svg";
 import formula2 from "../../assets/formula_2.svg";
-import "aos/dist/aos.css";
-AOS.init();
 
 function InfoSection({ isUserInputPageShowing }) {
   return (
@@ -20,11 +17,10 @@ function InfoSection({ isUserInputPageShowing }) {
       //     : "info-section-form-closed"
       // }
     >
-      <h2>
-        Just a bit more info about the calculations done behind the scenes
-      </h2>
+      <h2>Wanna meet the formulae?</h2>
       <p className="subheader">
-        The following formulae are used to calculate the remaining years:
+        The following formulae are used to calculate the remaining years needed
+        to reach the goal:
       </p>
       <p className="explaination1">
         The formula is the addition of the future value of the deposits and the

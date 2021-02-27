@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { animateScroll, scroller } from "react-scroll";
 
-const ScrollToTopOnMount = ({ path, to, duration, offset }) => {
+const ScrollToTopOnMount = ({ to, duration, offset }) => {
   useEffect(() => {
     to === undefined
       ? animateScroll.scrollToTop({
