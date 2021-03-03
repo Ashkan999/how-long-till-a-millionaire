@@ -2,7 +2,8 @@ $start-button-width: 200px;
 $start-button-height: 50px;
 
 %main-button {
-  color: $color-text-contrast;
+  // color: $color-text-contrast;
+  color: $color-secondary-1-2;
   background-color: $color-primary-0;
   width: $start-button-width;
   height: $start-button-height;

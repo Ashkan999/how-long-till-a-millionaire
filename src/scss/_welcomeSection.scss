@@ -9,10 +9,11 @@
   // background-color: aqua;
 
   h1 {
-    color: $color-secondary-2-0;
+    color: $color-secondary-0-0;
   }
 
   p {
+    color: $color-secondary-1-2;
     font-size: 1.3rem;
 
     @media screen and (max-width: 400px) {

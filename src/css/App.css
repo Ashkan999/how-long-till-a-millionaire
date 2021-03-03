@@ -1,5 +1,5 @@
 .welcome-section .start-button-showing, .welcome-section .start-button-hidden, #user-input-page .back-button, .main-form .submit-button {
-  color: black;
+  color: #304134;
   background-color: #83e85a;
   width: 200px;
   height: 50px;
@@ -244,12 +244,19 @@
 }
 
 .footer {
-  width: 100%;
-  border-top: rgba(119, 136, 153, 0.178) solid 1px;
+  display: -ms-grid;
+  display: grid;
+  border-top: rgba(16, 123, 139, 0.1) solid 1px;
 }
 
 .footer p {
-  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.7rem;
+}
+
+.footer .git-icon {
+  color: #107a8b;
+  opacity: 0.8;
 }
 
 .welcome-section {
@@ -277,6 +284,7 @@
 }
 
 .welcome-section p {
+  color: #304134;
   font-size: 1.3rem;
 }
 
@@ -523,7 +531,7 @@
 }
 
 .example-section {
-  min-height: 800px;
+  min-height: 1000px;
   background-color: #107a8b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -589,7 +597,7 @@
 
 .info-section {
   max-width: 768px;
-  min-height: 800px;
+  min-height: 1000px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
@@ -686,7 +694,7 @@
 }
 
 .welcome-and-form-container {
-  min-height: 900px;
+  min-height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,6 +713,8 @@
 }
 
 #results-page {
+  max-width: 900px;
+  min-height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -716,8 +726,6 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: auto;
-  max-width: 900px;
-  height: 100vh;
 }
 
 #results-page .chart-container {

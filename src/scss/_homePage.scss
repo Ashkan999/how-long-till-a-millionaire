@@ -5,7 +5,6 @@
 @import "./infoSection";
 
 .home-page {
-  // height: 200vh;
   // min-height: 1200px;
   display: flex;
   flex-direction: column;
@@ -15,7 +14,7 @@
 }
 
 .welcome-and-form-container {
-  min-height: 900px;
+  min-height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

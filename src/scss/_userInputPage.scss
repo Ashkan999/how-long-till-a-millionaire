@@ -23,12 +23,12 @@
   .back-button {
     @extend %main-button;
     color: $color-text-2;
-    background-color: $color-secondary-2-0;
+    background-color: $color-secondary-0-0;
     width: $back-button-width;
     height: $back-button-height;
 
     &:hover {
-      background-color: $color-secondary-2-1;
+      background-color: $color-secondary-0-1;
     }
   }
 
