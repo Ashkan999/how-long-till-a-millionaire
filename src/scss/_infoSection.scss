@@ -1,11 +1,61 @@
 .info-section {
-  margin-block: 20%;
-  height: 800px;
+  max-width: 768px;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  column-gap: 30px;
+  row-gap: 3em;
+  grid-template-areas:
+    "header header"
+    "subheader subheader"
+    "explaination1 formula1"
+    "explaination2 formula2";
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  padding: 1em 1em;
+  // color: $color-secondary-1-2;
 
-  p {
-    font-size: 1.2rem;
-    text-align: left;
-    margin-inline: 30%;
-    margin-block: 5%;
+  h2 {
+    color: $color-secondary-0-0;
+    grid-area: header;
+  }
+
+  .subheader {
+    grid-area: subheader;
+  }
+
+  .explaination1 {
+    font-size: 1rem;
+    grid-area: explaination1;
+  }
+
+  .explaination2 {
+    font-size: 1rem;
+    grid-area: explaination2;
+  }
+
+  .formula1 {
+    grid-area: formula1;
+  }
+
+  .formula2 {
+    grid-area: formula2;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+    .formula1 {
+      width: 60%;
+      max-width: 200px;
+    }
+    .formula2 {
+      width: 80%;
+      max-width: 260px;
+    }
   }
 }

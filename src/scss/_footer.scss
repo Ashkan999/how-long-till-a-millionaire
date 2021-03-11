@@ -1,7 +1,14 @@
 .footer {
-  border-top: lightslategrey solid 1px;
+  display: grid;
+  border-top: rgba(16, 123, 139, 0.1) solid 1px;
 
   p {
-    font-size: 0.7em;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.7rem;
+  }
+
+  .git-icon {
+    color: $color-secondary-0-0;
+    opacity: 0.8;
   }
 }

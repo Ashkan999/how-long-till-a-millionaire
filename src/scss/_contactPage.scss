@@ -1,0 +1,13 @@
+.contact-page {
+  height: 100vh;
+
+  p {
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin: auto;
+  }
+}

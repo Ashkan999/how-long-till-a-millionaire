@@ -1,0 +1,28 @@
+$start-button-width: 200px;
+$start-button-height: 50px;
+
+%main-button {
+  // color: $color-text-contrast;
+  color: $color-secondary-1-2;
+  background-color: $color-primary-0;
+  width: $start-button-width;
+  height: $start-button-height;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border-width: 0px;
+  outline-width: 0;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s ease-out, box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary-1;
+    transform: translate(0px, -2px);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    transition: none;
+    transform: translate(0px, 2px);
+  }
+}

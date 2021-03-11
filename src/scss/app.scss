@@ -1,10 +1,11 @@
+@import "./themeColors";
+@import "./buttons";
 @import "./header";
-@import "./welcomeSection";
-@import "./infoSection";
 @import "./footer";
-@import "./mainForm";
-@import "./userInputPage";
+@import "./homePage";
 @import "./resultsPage";
+@import "./aboutPage";
+@import "./contactPage";
 
 * {
   box-sizing: border-box;
@@ -12,10 +13,40 @@
   padding: 0;
 }
 
+//implement later maybe for mobile menu 300px
+// body {
+//   overflow-y: hidden;
+//   pointer-events: none;
+// }
+
 .App {
+  // font-size: 3px;
   text-align: center;
+  background-color: #f6f9fc;
+  // width: 100%;
 }
 
-.button {
-  cursor: pointer;
+html {
+  // font-size: 62.5%;
 }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+// #107a8b
+// #2cb978
+// #83e85a
+// #3b5441
+
+// :export {
+//   colorSecondary20: $color-secondary-2-0;
+//   colorSecondary21: black;
+// }
+
+// :export {
+//   colorSecondary20: $color-secondary-2-0;
+//   // colorSecondary21: pink;
+// }
