@@ -1,7 +1,7 @@
 name: Linter
 
 # Run this workflow every time a new commit pushed to your repository
-on: push
+on: [push, pull_request]
 
 jobs:
   # Set the job key. The key is displayed as the job name
@@ -16,3 +16,9 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
+        
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.5 
+        
+      - run: npm install
+      - run: npm run lint
