@@ -14,6 +14,7 @@ const MainForm = ({ onSubmitProp }) => {
       annualReturn: Number(data.annualReturn),
       monthlyInvestment: Number(data.monthlyInvestment),
     });
+    console.log("hoi");
     history.push("/results");
   };
 
