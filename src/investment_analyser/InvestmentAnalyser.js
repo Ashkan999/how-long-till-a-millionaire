@@ -4,7 +4,7 @@ class InvestmentAnalyser {
   }
 
   processUserData({ startCapital, annualReturn, monthlyInvestment }) {
-    //TODO: input validation
+    // TODO: input validation
 
     const annualReturnRate = annualReturn / 100;
 
@@ -13,13 +13,13 @@ class InvestmentAnalyser {
 
     let i = 1;
     while (processedData[i - 1] < this.goalCapital) {
-      let principalInterest = startCapital * Math.pow(1 + annualReturnRate, i);
-      let futureValueOfDeposits =
+      const principalInterest = startCapital * (1 + annualReturnRate) ** i;
+      const futureValueOfDeposits =
         (monthlyInvestment *
-          (Math.pow(1 + annualReturnRate, i + 1) - (1 + annualReturnRate))) /
+          ((1 + annualReturnRate) ** (i + 1) - (1 + annualReturnRate))) /
         annualReturnRate;
       processedData.push(Math.round(principalInterest + futureValueOfDeposits));
-      i++;
+      i += 1;
     }
 
     return processedData;
