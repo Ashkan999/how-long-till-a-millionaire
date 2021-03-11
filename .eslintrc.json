@@ -18,7 +18,7 @@
     "plugins": [
         "react"
     ],
-    "ignorePatterns": ["src/assets/*", "src/css/*", "src/scss/*", "App.test.js" ],
+    "ignorePatterns": ["src/css/*", "src/scss/*", "App.test.js" ],
     "rules": {
         "jsx-a11y/label-has-associated-control": [ 2, {
             "assert": "either"
