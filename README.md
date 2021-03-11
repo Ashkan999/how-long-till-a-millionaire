@@ -1,4 +1,4 @@
 # How Long Till I'm a Millionaire
 
-[![GitHub Super-Linter](https://github.com/Ashkan999/how-long-till-a-millionaire/workflows/Super-Linter/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![Linter](https://github.com/Ashkan999/how-long-till-a-millionaire/actions/workflows/linter.yml/badge.svg)](https://github.com/Ashkan999/how-long-till-a-millionaire/actions/workflows/linter.yml)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
