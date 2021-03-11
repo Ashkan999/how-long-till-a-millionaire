@@ -58,12 +58,12 @@ const MainForm = ({ onSubmitProp }) => {
   );
 };
 
-MainForm.defaultProps = {
-  onSubmitProp: () => {},
-};
+// MainForm.defaultProps = {
+//   onSubmitProp: () => {},
+// };
 
-MainForm.propTypes = {
-  onSubmitProp: PropTypes.func,
-};
+// MainForm.propTypes = {
+//   onSubmitProp: PropTypes.func,
+// };
 
 export default MainForm;
