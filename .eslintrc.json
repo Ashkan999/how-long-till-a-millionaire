@@ -1,9 +1,16 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest/globals": true
   },
-  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "airbnb",
+    "prettier"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -11,7 +18,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "jest"],
   "ignorePatterns": ["src/assets/*", "src/css/*", "src/scss/*", "App.test.js"],
   "rules": {
     "jsx-a11y/label-has-associated-control": [
@@ -20,5 +27,13 @@
         "assert": "either"
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "rules": {
+        "react/jsx-filename-extension": 0
+      }
+    }
+  ]
 }
