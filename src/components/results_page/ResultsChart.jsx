@@ -9,13 +9,13 @@ const ResultsChart = ({ userData }) => {
       {
         label: "Liquid Net Worth",
         data: userData,
-        backgroundColor: "rgba(16, 123, 139, 0.6)",
+        backgroundColor: "rgb(131, 232, 90, 0.6)",
       },
       {
         type: "bar",
         label: "Liquid Net Worth",
         data: userData,
-        backgroundColor: "rgba(16, 123, 139, 0.8)",
+        backgroundColor: "rgb(131, 232, 90, 0.6)",
       },
     ],
   };

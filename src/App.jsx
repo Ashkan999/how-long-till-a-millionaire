@@ -14,7 +14,7 @@ import InvestmentAnalyser from "./investment_analyser/InvestmentAnalyser";
 AOS.init();
 
 function App() {
-  const goalCapital = 1000;
+  const goalCapital = 1000000;
 
   const investmentAnalyser = new InvestmentAnalyser(goalCapital);
   const [userData, setUserData] = useState(null); // make empty array ipv null
