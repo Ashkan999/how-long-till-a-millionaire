@@ -1,12 +1,10 @@
 #results-page {
   max-width: 900px;
-  min-height: 1000px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin: auto;
-
-  // background-color: aqua;
 
   .chart-container {
     display: flex;
