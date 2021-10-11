@@ -531,7 +531,7 @@
 }
 
 .example-section {
-  min-height: 1000px;
+  min-height: 130vh;
   background-color: #107a8b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -597,7 +597,7 @@
 
 .info-section {
   max-width: 768px;
-  min-height: 1000px;
+  min-height: 130vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
@@ -605,7 +605,7 @@
   -webkit-column-gap: 30px;
           column-gap: 30px;
   row-gap: 3em;
-      grid-template-areas: "header header" "subheader subheader" "explaination1 formula1" "explaination2 formula2";
+      grid-template-areas: "header header" "subheader subheader" "explaination1 formula1" "explaination2 formula2";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -694,7 +694,7 @@
 }
 
 .welcome-and-form-container {
-  min-height: 1000px;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,7 +714,7 @@
 
 #results-page {
   max-width: 900px;
-  min-height: 1000px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
