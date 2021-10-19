@@ -6,7 +6,7 @@ const WelcomeSection = ({ isUserInputPageShowing, onStart }) => (
   <div className="welcome-section">
     <h1>How long till you&apos;re a millionaire?</h1>
     <p>
-      Find out now using this fast and simple compound interest calculater that
+      Find out now using this fast and simple compound interest calculator that
       supports monthly deposits!{" "}
     </p>
     <MainButton
