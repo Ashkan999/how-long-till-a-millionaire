@@ -16,7 +16,7 @@ const InfoSection = () => (
     //     : "info-section-form-closed"
     // }
   >
-    <h2>Wanna meet the formulae?</h2>
+    <h2>Meet the formulae</h2>
     <p className="subheader">
       The following formulae are used to calculate the remaining years needed to
       reach the goal:
