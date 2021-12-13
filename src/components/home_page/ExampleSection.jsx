@@ -4,7 +4,7 @@ import results from "../../assets/results.PNG";
 const ExampleSection = () => (
   <div className="example-section">
     <div className="example-section-container">
-      <p>See your results quick and easily</p>
+      <p>View your results quick and easily</p>
       <img
         data-aos="fade-left"
         data-aos-duration="1000"

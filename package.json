@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "npx eslint \"src/**\"",
-    "prettierLint": "npx prettier --check ."
+    "prettierLint": "npx prettier -w . && npx prettier --check ."
   },
   "eslintConfig": {
     "extends": [

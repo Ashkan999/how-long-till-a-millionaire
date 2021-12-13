@@ -22,17 +22,19 @@ const MainForm = ({ onSubmitProp }) => {
       <label className="form-input">
         Starting capital:
         <input
+          required="true"
           type="number"
-          min="0"
-          max="999999"
+          min="1"
+          max="1000000"
           name="startCapital"
           placeholder="10.000"
           ref={register}
         />
       </label>
       <label className="form-input">
-        Estimated annual return rate: (%)
+        Estimated annual return (%):
         <input
+          required="true"
           type="number"
           min="0"
           max="100"
@@ -42,11 +44,12 @@ const MainForm = ({ onSubmitProp }) => {
         />
       </label>
       <label className="form-input">
-        Monthly investments amount:
+        Monthly deposits:
         <input
+          required="true"
           type="number"
           min="0"
-          max="999999"
+          max="100000"
           name="monthlyInvestment"
           placeholder="200"
           ref={register}
