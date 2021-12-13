@@ -18,8 +18,8 @@ const InfoSection = () => (
   >
     <h2>Meet the formulae</h2>
     <p className="subheader">
-      The following formulae are used to calculate the remaining years needed to
-      reach the goal:
+      The following formulae are used to calculate the remaining years untill
+      you become a millionaire:
     </p>
     <p className="explaination1">
       The formula is the addition of the future value of the deposits and the

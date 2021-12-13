@@ -17,7 +17,7 @@ function App() {
   const goalCapital = 1000000;
 
   const investmentAnalyser = new InvestmentAnalyser(goalCapital);
-  const [userData, setUserData] = useState(null); // make empty array ipv null
+  const [userData, setUserData] = useState([]);
   const processUserData = (data) => {
     const processedData = investmentAnalyser.processUserData(data);
     setUserData(processedData);
