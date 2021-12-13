@@ -24,7 +24,24 @@ const ResultsChart = ({ userData }) => {
     <Line
       data={chartData}
       options={{
-        // title: { display: true, text: "Your Results", fontSize: 16 },
+        scales: {
+          xAxes: [
+            {
+              scaleLabel: {
+                display: true,
+                labelString: "Time (in years)",
+              },
+            },
+          ],
+          yAxes: [
+            {
+              scaleLabel: {
+                display: true,
+                labelString: "Liquid Net Worth",
+              },
+            },
+          ],
+        },
         animation: { duration: 3000, easing: "easeOutQuad" },
         legend: { display: false },
       }}
